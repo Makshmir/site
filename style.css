@@ -179,6 +179,7 @@ color: #161513;
 }
 .greetings__textblock__uppertext__block {
 	display: flex;
+	flex-wrap:wrap;
 }
 .greetings__textblock__undertext {
 		list-style-type: none;
