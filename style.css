@@ -794,6 +794,9 @@ margin: 6px 0px 0px 0px;
 	display:flex;
 	margin:auto;
 }
+.subscribing__lefpart p{
+	margin:0px 20px 0px 20px;
+}
 .subscribing__rightpart {
 	flex:0 1 50%;
 	display:flex;
@@ -850,6 +853,16 @@ margin: 6px 0px 0px 0px;
 }
 
 .footer__under {}
+.footer__upper__rightpart{
+	margin:0px 20px 0px 20px;
+}
+.footer__upper__leftpart{
+	margin:0px 20px 0px 20px;
+
+}
+.footer__under__rightpart{
+	margin:0px 20px 0px 20px;
+}
 .footer__upper__rightpart li{
 	float: left;
 	margin: 0px 16px 0px 16px;
@@ -886,6 +899,7 @@ margin: 6px 0px 0px 0px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #F2F1EF;
+	margin:0px 20px 0px 20px;
 
 }
 .footer__under__rightpart a{
