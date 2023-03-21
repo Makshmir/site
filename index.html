@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,16 +54,17 @@
             <div class="container">
                 <div class="registration">
                     <form>
-                        <input type="text" name="fname" placeholder="Прізвище">
-                        <input type="text" name="lname" placeholder="Ім'я">
-                        <input type="text" name="sname" placeholder="По-батькові">
-                        <input type="tel" name="telephone" placeholder="Номер телефону">
+                        <input type="text" required name="fname" placeholder="Прізвище">
+                        <input type="text" required name="lname" placeholder="Ім'я">
+                        <input type="text" required name="sname" placeholder="По-батькові">
+                        <input type="tel" required name="telephone" placeholder="Номер телефону">
                         <label for="date">Дата народження</label>
-                        <input type="date" name="date" id="date" max="2023-03-21">
-                        <input type="text" name="home" placeholder="Звідки ви виїхали?">
-                        <input type="text" name="actplace" placeholder="Фактичне місце проживання">
-                        <input type="text" name="vpo" placeholder="Номер довідки ВПО" maxlength="15" minlength="15">
-                        <input type="number" name="children" placeholder="Кількість дітей">
+                        <input type="date" required name="date" id="date" max="2023-03-21">
+                        <input type="text" required name="home" placeholder="Звідки ви виїхали?">
+                        <input type="text" required name="actplace" placeholder="Фактичне місце проживання">
+                        <input type="text" required name="vpo" placeholder="Номер довідки ВПО" maxlength="15" minlength="15">
+                        <label for="children">Кількість дітей</label>
+                        <input type="number" name="children" placeholder="Кількість дітей" min="0" value="0">
                         <fieldset>
                         <label class="child__age">Вік дітей</label><br>
                         <label>
