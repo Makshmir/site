@@ -64,6 +64,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 	line-height: 0.9;
 	text-align: center;
 }
+.header__buttons button:hover{
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	color:hsla(120, 100%, 50%, 0);
+	width:200px;
+
+
+}
 @media(max-width: 1170px){
 	.container{
 		max-width: 970px;
@@ -115,6 +124,9 @@ hr {
 	.banner p{
 		font-size: 60px;
 	}
+	.header__buttons button:hover{
+		width:170px;
+	}
 }
 @media only screen and (max-width: 767px) {
     .header__row img {
@@ -125,15 +137,16 @@ hr {
 		font-size:10px;
 		width:100px;
 		height:35px;
-
 		margin:auto 7px auto 7px;
-
 	}
 	.banner{
 		height:220px;
 	}
 	.banner p{
 		font-size: 50px;
+	}
+	.header__buttons button:hover{
+		width:150px;
 	}
 }
 @media only screen and (max-width: 540px) {
@@ -145,15 +158,16 @@ hr {
 		font-size:8px;
 		width:70px;
 		height:34px;
-
 		margin:auto 6px auto 6px;
-
 	}
 	.banner{
 		height:150px;
 	}
 	.banner p{
 		font-size: 40px;
+	}
+	.header__buttons button:hover{
+		width:80px;
 	}
 }
 .header__row img{
@@ -163,12 +177,23 @@ hr {
 	display:flex;
 }
 
-.button__news:hover{
+
+.header__buttons button{
+	transition:width 0.5s, background-image 0.5s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+
+.button__news:hover {
 	background-image: url("img/newspaper.png");
-	background-size: auto;
-	background-repeat: no-repeat;
-	background-position: center;
-	color:hsla(120, 100%, 50%, 0);
+
+}
+.button__help:hover{
+	background-image: url("img/aid.png");
+}
+.button__donate:hover{
+	background-image: url("img/donation.png");
 
 }
 
