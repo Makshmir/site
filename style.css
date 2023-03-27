@@ -60,6 +60,7 @@ hr {
 	background:black;
 	border:none;
 	align-self:center;
+	margin:0px 0px 20px 0px;
 }
 .header__row {
 	display:flex;
@@ -101,4 +102,42 @@ hr {
 	font-family: 'Montserrat';
 	font-style: normal;
 
+}
+.button__news:hover{
+	background-image: url("img/newspaper.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	color:hsla(120, 100%, 50%, 0);
+
+}
+.banner{
+	position: relative; 
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.banner:before{
+	background-image: url("img/hub_inside.jpg");
+	content: "";
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.75;
+}
+.banner p{
+
+	position: relative;
+	color: black;  
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-size:80px;
+	line-height: 0.9;
+	text-align: center;
 }
