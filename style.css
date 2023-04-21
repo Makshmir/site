@@ -158,8 +158,8 @@ margin:0px 5px 0px 5px;
     align-items: center;
     margin:0px 5px 0px 5px;
     background-color:#9DC843;
-    flex-basis: 120px;
-    height:28px;
+    flex-basis: 135px;
+    height:35px;
 
     justify-content: center;
     border-radius: 5px;
@@ -175,31 +175,6 @@ margin:0px 5px 0px 5px;
     text-align: center;
     margin:0px 5px 0px 5px;
 }
-
-@media(max-width: 1170px) {
-    .container {
-        max-width: 970px;
-    }
-}
-
-@media(max-width: 992px) {
-    .container {
-        max-width: 750px;
-    }
-}
-
-@media(max-width: 767px) {
-    .container {
-        max-width: 560px;
-    }
-}
-
-@media(max-width: 540px) {
-    .container {
-        max-width: 370px;
-    }
-}
-
 
 
 .menu{
@@ -247,6 +222,7 @@ margin:0px 5px 0px 5px;
     justify-content: space-between;
     width:80%;
     align-items: flex-end;
+    margin:auto;
 }
 .menu__pizza__buy__price {
     font-family: 'Roboto Flex';
@@ -256,6 +232,8 @@ margin:0px 5px 0px 5px;
     line-height: 19px;
     text-align: center;
     color: #000000;
+    margin: 0px 5px 0px 5px;
+    flex: 1 0 auto;
 }
 .menu__pizza__buy__weight {
     font-family: 'Roboto Flex';
@@ -265,6 +243,8 @@ margin:0px 5px 0px 5px;
     line-height: 12px;
     text-align: center;
     color: #696767;
+    margin: 0px 5px 0px 5px;
+    flex: 1 0 auto;
 }
 .menu__pizza__buy__button {
     font-family: 'Roboto Flex';
@@ -278,6 +258,7 @@ margin:0px 5px 0px 5px;
     height:30px;
     border-radius: 8px;
     background-color: #F4D890;
+    margin: 0px 5px 0px 5px;
 }
 
 .footer {
@@ -330,8 +311,18 @@ margin:0px 5px 0px 5px;
     margin:10px 20px 15px 10px;
 }
 .footer__contacts__geonumber {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.footer__contacts__geonumber__geo {
+
+.footer__contacts__geonumber__geo{
+    display:flex;
+    flex-direction: row;
+    margin:0px 0px 10px 0px;
+
+}
+.footer__contacts__geonumber__geo__text {
     font-family: 'Roboto Flex';
     font-style: normal;
     font-weight: 400;
@@ -365,4 +356,73 @@ margin:0px 5px 0px 5px;
     margin:10px 20px 15px 10px;
 }
 .footer__payments__images {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+
+
+
+
+@media(max-width: 1170px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        max-width: 560px;
+    }
+}
+
+@media(max-width: 540px) {
+    .container {
+        max-width: 370px;
+    }
+    .footer__social, .footer__contacts, .footer__payments{
+        margin:0px 0px 0px 0px
+    }
+    .footer__payments__images img{
+        height:80%;
+    
+    }
+    .footer__social__images img{
+        height:80%;
+    }
+    .footer__contacts__text, .footer__payments__text, .footer__social__text{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .footer__contacts__geonumber__geo__text, .footer__contacts__geonumber__number{
+        font-size: 10px;
+    }
+    .header__profile__text{
+        font-size: 12px;
+    }
+    .header__profile{
+        flex-basis: 115px;
+    }
+    .header__number__text{
+        font-size: 12px;
+    }
+    .headeer__number{
+        margin:0px 5px 0px 5px;
+    }
+    .header__geolocation{
+        margin:0px 5px 0px 5px;
+    }
+    .header__logo img{
+        width:65px;
+        height:65px;
+    }
+
+}
+
