@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,100;1,300;1,400&amp;display=swap" rel="stylesheet">
-    <title>Херсонський Хаб</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Pizzaurant</title>
 </head>
 <body>
     <div class="wrapper">
@@ -16,42 +18,89 @@
             <div class="header">
                 <div class="container">
                     <div class="header__row">
-                        <img src="img/kherson_logo.png" alt="" height="80px" width="80px">
-                        <div class="header__buttons">
-                            <button class="button__news">Новини</button>
-                            <button class="button__help">Отримати допомогу</button>
-                            <button class="button__donate">Підтримати фонд</button>
-                        </div>
                         
+                        <div class="header__logo">
+                            <img src="img/pizauraunt_logo.png" width="70" height="70" alt="">
+                        </div>
+                        <div class="header__geonumber">
+                            <div class="header__geolocation">
+                                <img src="img/geo-icon.png" alt="">
+                                <p class="header__geolocation__text">Київ</p>
+                            </div>
+                            <div class="header__number">
+                                <img src="img/number-icon.png" alt="">
+                                <p class="header__number__text">0ХХ ХХХ ХХХХ</p>
+                            </div>
+                        </div>
+                        <div class="header__profile">
+                            <img src="img/profile-icon.png" alt="">
+                            <p class="header__profile__text">Профіль</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="banner">
-                <p>ХЕРСОНСЬКИЙ ХАБ</p>
-            </div>
-            <div class="activity">
+            <div class="menu">
                 <div class="container">
-                    <div class="activity__row">
-                        <div class="activity__humanitarian__row">
-                            <div class="activity__humanitarian__leftpart activity__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis placeat adipisci odit voluptatibus itaque deserunt rerum consequuntur, sit corporis. Exercitationem dolorem tenetur ipsa repellendus vel nobis aperiam quaerat quam veritatis?</div>
-                            <div class="activity__humanitarian__rightpart activity__img">
-                                <img src="img/humanitarian.jpg" alt="">
-                            </div>
+                    <div class="menu__row">
+                        <div class="menu__pizza">
+                            <img src="img/four-cheeze-pizza.jpg" height="180px" width="180px" alt="">
+                            <p class="menu__pizza__name">4 сири</p>
+                            <p class="menu__pizza__composition">Cоус вершковий, сир моцарела, сир дор блю, сир королівський, сир пармезан</p>
+                            <div class="menu__pizza__buy">
+                                <p class="menu__pizza__buy__price">169 грн</p>
+                                <p class="menu__pizza__buy__weight">450 г</p>
+                                <button class="menu__pizza__buy__button">Замовити</button>
+                            </div> 
                         </div>
-                        <div class="activity__medical__row">
-                            <div class="activity__medical__leftpart activity__img">
-                                <img src="img/medical.jpg" alt="">
-                            </div>
-                            <div class="activity__medical__rightpart activity__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis placeat adipisci odit voluptatibus itaque deserunt rerum consequuntur, sit corporis. Exercitationem dolorem tenetur ipsa repellendus vel nobis aperiam quaerat quam veritatis?</div>
-                            
+                        <div class="menu__pizza">
+                            <img src="img/capricciosa-pizza.jpg" height="180px" width="180px" alt="">
+                            <p class="menu__pizza__name">Капрічоза</p>
+                            <p class="menu__pizza__composition">Соус томатний, сир моцарела, шинка, салямі, гриби, помідори</p>
+                            <div class="menu__pizza__buy">
+                                <p class="menu__pizza__buy__price">180 грн</p>
+                                <p class="menu__pizza__buy__weight">550 г</p>
+                                <button class="menu__pizza__buy__button">Замовити</button>
+                            </div> 
                         </div>
-                        <div class="activity__ngo__row">
-
-                            <div class="activity__ngo__left activity__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis placeat adipisci odit voluptatibus itaque deserunt rerum consequuntur, sit corporis. Exercitationem dolorem tenetur ipsa repellendus vel nobis aperiam quaerat quam veritatis?</div>
-                            <div class="activity__ngo__right activity__img">
-                                <img src="img/ngo.jpg" alt="">
-                            </div>
+                        <div class="menu__pizza">
+                            <img src="img/hawaiian-pizza.jpg" height="180px" width="180px" alt="">
+                            <p class="menu__pizza__name">Гавайська</p>
+                            <p class="menu__pizza__composition">Соус вершковий, сир моцарела, куряче філе, ананас, кукурудза, маслини</p>
+                            <div class="menu__pizza__buy">
+                                <p class="menu__pizza__buy__price">199 грн</p>
+                                <p class="menu__pizza__buy__weight">480 г</p>
+                                <button class="menu__pizza__buy__button">Замовити</button>
+                            </div> 
+                        </div>
+                        <div class="menu__pizza">
+                            <img src="img/texas-pizza.jpg" height="180px" width="180px" alt="">
+                            <p class="menu__pizza__name">Техаська</p>
+                            <p class="menu__pizza__composition">Cоуc томатний, сир моцарела, куряче філе, шинка, помідори, соус солодкий чилі</p>
+                            <div class="menu__pizza__buy">
+                                <p class="menu__pizza__buy__price">189 грн</p>
+                                <p class="menu__pizza__buy__weight">490 г</p>
+                                <button class="menu__pizza__buy__button">Замовити</button>
+                            </div> 
+                        </div>
+                        <div class="menu__pizza">
+                            <img src="img/pepperoni_pizza.jpg" height="180px" width="180px" alt="">
+                            <p class="menu__pizza__name">Пепероні</p>
+                            <p class="menu__pizza__composition">Соус томатний, сир моцарела, папероні</p>
+                            <div class="menu__pizza__buy">
+                                <p class="menu__pizza__buy__price">180 грн</p>
+                                <p class="menu__pizza__buy__weight">480 г</p>
+                                <button class="menu__pizza__buy__button">Замовити</button>
+                            </div> 
+                        </div>
+                        <div class="menu__pizza">
+                            <img src="img/felicita-pizza.jpg" height="180px" width="180px" alt="">
+                            <p class="menu__pizza__name">Фелічіта</p>
+                            <p class="menu__pizza__composition">Соус томатний, сир моцарела, куряче філе, бекон, гриби</p>
+                            <div class="menu__pizza__buy">
+                                <p class="menu__pizza__buy__price">179 грн</p>
+                                <p class="menu__pizza__buy__weight">530 г</p>
+                                <button class="menu__pizza__buy__button">Замовити</button>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -59,23 +108,30 @@
             <div class="footer">
                 <div class="container">
                     <div class="footer__row">
-                        <div class="footer__img">
-                            <img src="img/kherson_logo.png" alt="" width="64px" height="64px">
-                            <img src="img/neskoreniy_logo.png" alt="" width="64px" height="64px">
+                        <div class="footer__social">
+                            <p class="footer__social__text">Ми в соцмережах</p>
+                            <div class="footer__social__images">
+                                <img src="img/facebook-logo.png" alt="">
+                                <img src="img/instagram-logo.png" alt="">
+                            </div>
                         </div>
-                        <div class="footer__social__row">
-                            <img src="img/phone.png" alt="" width="50px" height="50px">
-                            <p>+38 (067) 253 1800</p>
-                            <a href="https://t.me/Kherson_Hub"><img src="img/telegram.png" alt=""></a>
-                            <a href="https://www.facebook.com/groups/830477237944706/"><img src="img/facebook.png" alt=""></a>
+                        <div class="footer__contacts">
+                            <p class="footer__contacts__text">Контакти</p>
+                            <div class="footer__contacts__geonumber">
+                                <p class="footer__contacts__geonumber__geo">вулиця Бандери, 8, Київ</p>
+                                <p class="footer__contacts__geonumber__number">0ХХ ХХХ ХХХХ</p>
+                            </div>
                         </div>
-                        <div class="footer__developer">
-                            <p>Designed and developed by Khmirov Maksym</p>
+                        <div class="footer__payments">
+                            <p class="footer__payments__text">Підтримувані платежі</p>
+                            <div class="footer__payments__images">
+                                <img src="img/mastercard-icon.png" alt="">
+                                <img src="img/visa-icon.png" alt="">
+                            </div>
                         </div>
-                    </div>   
+                    </div>
                 </div>
             </div>
-            
         </div>
     </div>
 </body>
